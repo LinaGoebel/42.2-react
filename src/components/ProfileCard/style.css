@@ -1,11 +1,15 @@
 .profile-card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
 
 .avatar-card {
   width: 100px;
@@ -13,28 +17,21 @@
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
-} 
+}
 
-.name-card{
+.name-card {
   font-size: 1.5em;
   font-weight: bold;
   margin: 0;
 }
 
 .occupation-card {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 10px;
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
 }
 
-.hobbies-card {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .hobbies-card li {
-    font-size: 0.9em;
-    color: #666;
-  }
-
-
+.hobbies-card li {
+  font-size: 0.9em;
+  color: #666;
+}
