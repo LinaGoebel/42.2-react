@@ -1,12 +1,11 @@
 import "./styles.css";
 
-function Button() {
-  const isGetButton = true;
+function Button({buttonName = "Get"}) {
+  // console.log(props);
 
   return (
-    <button className="main-button">{isGetButton ? "Get" : "Send"}</button>
+    <button className="main-button">{buttonName}</button>
   );
 }
 
 export default Button;
-
