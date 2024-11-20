@@ -1,13 +1,13 @@
 import "./styles.css";
 
-function AnimalCar ({animalName, animalSpecies, animalImage, children}){
-    return (<div className="animal-card-wrapper">
-        <h3>{animalName}</h3>
-        <div>{animalSpecies}</div>
-        <img src={animalImage} alt="" />
-        {children}
+function AnimalCard({ animalData }) {
+  return (
+    <div className="animal-card-wrapper">
+      <h3>{animalData.name}</h3>
+      <div>{animalData.species}</div>
+      <img src={animalData.image} alt="" />
     </div>
-    );
+  );
 }
 
-export default AnimalCar;
+export default AnimalCard;
